@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
  * Create the `cutFirst` function that takes a string and remove the 2 first characters
@@ -12,8 +12,23 @@
 
 // Your code:
 
-//* Begin of tests
-const assert = require('assert');
+const cutFirst = str => {
+  return str.substring(2);
+};
 
-assert.fail('You must write your own tests');
+const cutLast = str => {
+  return str.substring(0, str.length - 2);
+};
+
+const cutFirstLast = str => {
+  let str2 = str.substring(2);
+  return str2.substring(0, str2.length - 2);
+};
+
+//* Begin of tests
+const assert = require("assert");
+
+assert.strictEqual(cutFirst("asdfasdf"), "dfasdf");
+assert.strictEqual(cutLast("asdfasdf"), "asdfas");
+assert.strictEqual(cutFirstLast("asdfasdf"), "dfas");
 // End of tests */

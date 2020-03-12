@@ -30,6 +30,12 @@ const keepFirstLast = str => {
 //* Begin of tests
 const assert = require("assert");
 
+assert.strictEqual(typeof keepFirst, "function");
+assert.strictEqual(keepFirst.length, 1);
+assert.strictEqual(typeof keepLast, "function");
+assert.strictEqual(keepLast.length, 1);
+assert.strictEqual(typeof keepFirstLast, "function");
+assert.strictEqual(keepFirstLast.length, 1);
 assert.strictEqual(keepFirst("asdfasdf"), "as");
 assert.strictEqual(keepLast("asdfasdf"), "df");
 assert.strictEqual(keepFirstLast("asdfasdf"), "fa");

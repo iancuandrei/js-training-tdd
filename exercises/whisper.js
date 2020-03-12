@@ -16,5 +16,7 @@ const whisper = str => {
 //* Begin of tests
 const assert = require("assert");
 
+assert.strictEqual(typeof whisper, "function");
+assert.strictEqual(whisper.length, 1);
 assert.strictEqual(whisper("ASDF"), "asdf");
 // End of tests */

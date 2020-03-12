@@ -28,6 +28,12 @@ const cutFirstLast = str => {
 //* Begin of tests
 const assert = require("assert");
 
+assert.strictEqual(typeof cutFirst, "function");
+assert.strictEqual(cutFirst.length, 1);
+assert.strictEqual(typeof cutLast, "function");
+assert.strictEqual(cutLast.length, 1);
+assert.strictEqual(typeof cutFirstLast, "function");
+assert.strictEqual(cutFirstLast.length, 1);
 assert.strictEqual(cutFirst("asdfasdf"), "dfasdf");
 assert.strictEqual(cutLast("asdfasdf"), "asdfas");
 assert.strictEqual(cutFirstLast("asdfasdf"), "dfas");

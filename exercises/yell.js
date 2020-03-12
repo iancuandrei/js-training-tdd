@@ -15,6 +15,8 @@ const yell = str => {
 //* Begin of tests
 const assert = require("assert");
 
+assert.strictEqual(typeof yell, "function");
+assert.strictEqual(yell.length, 1);
 assert.strictEqual(yell("asdf"), "ASDF");
 
 // End of tests */
